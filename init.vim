@@ -25,6 +25,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 "Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tpope/vim-fugitive'
+Plug 'windwp/nvim-autopairs'
 
 call plug#end()
 
@@ -45,4 +46,5 @@ let g:NERDTreeShowHidden=1
 lua << END
 require('lualine').setup()
 require('lualine').get_config()
+require("plugin_conf.autopairs").setup()
 END
