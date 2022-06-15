@@ -21,9 +21,8 @@ Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-loc
 Plug 'sheerun/vim-polyglot'
 Plug 'morhetz/gruvbox'
 Plug 'nvim-lua/plenary.nvim'
-"Plug 'akinsho/toggleterm.nvim'
 Plug 'nvim-lualine/lualine.nvim'
-"Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tpope/vim-fugitive'
 Plug 'windwp/nvim-autopairs'
 
