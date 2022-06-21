@@ -8,7 +8,8 @@ set softtabstop=4
 set mouse=a
 set expandtab
 set autoread
-set guifont=SpaceMono\ NF
+set guifont=RobotoMono\ NF
+set smartindent
 set nocompatible
 
 call plug#begin()
@@ -26,13 +27,17 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tpope/vim-fugitive'
 Plug 'windwp/nvim-autopairs'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 call plug#end()
 
 " Gruvbox
 let g:gruvbox_transparent_bg=1
 let g:gruvbox_contrast_dark="hard"
-colorscheme gruvbox
+"colorscheme gruvbox
+
+" Tokyo Night
+colorscheme tokyonight
 
 " NERDTree
 nnoremap <C-f> :NERDTreeFocus<CR>
@@ -47,4 +52,5 @@ lua << END
 require('lualine').setup()
 require('lualine').get_config()
 require("plugin_conf.autopairs").setup()
+require('color')
 END
