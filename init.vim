@@ -31,11 +31,6 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 call plug#end()
 
-" Gruvbox
-let g:gruvbox_transparent_bg=1
-let g:gruvbox_contrast_dark="hard"
-"colorscheme gruvbox
-
 " Tokyo Night
 colorscheme tokyonight
 
