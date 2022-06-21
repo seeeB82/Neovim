@@ -17,7 +17,7 @@ call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'ap/vim-css-color'
 Plug 'rafi/awesome-vim-colorschemes'
-Plug 'ryanoasis/vim-devicons'
+"Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
 Plug 'sheerun/vim-polyglot'
 Plug 'morhetz/gruvbox'
@@ -47,5 +47,7 @@ lua << END
 require('lualine').setup()
 require('lualine').get_config()
 require("plugin_conf.autopairs").setup()
-require('color')
+require("colors")
+--require("keymap")
+--require("packer")
 END
