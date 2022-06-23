@@ -12,6 +12,7 @@ set guifont=RobotoMono\ NF
 set smartindent
 set nocompatible
 
+
 call plug#begin()
 
 Plug 'preservim/nerdtree'
